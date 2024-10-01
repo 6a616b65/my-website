@@ -36,9 +36,51 @@ Then I need to sync the repo in VSCode.
 -->
 <!------------------------------------------------------------------------------------>
 
-    <Head>
+<Head>
     <title style="font-family: Arial, Helvetica, sans-serif;">e map </title>
-    </Head>
+    
+    <style>
+
+details {
+    padding: 10px; 
+    border: 1px dotted #b812ca;
+    border-radius: 3px;
+    border-color: #b812ca;
+    font-weight: bolder;
+    transition: 0.2s background linear;
+}
+
+details:hover {
+  border: solid;
+  border-color: #b812ca;
+  border-radius: 6px;
+  border-width: 2px;
+  background-color: #6a616b65;
+}
+
+details[open] {
+  background-color: transparent;
+}
+
+details[open] > summary {
+  list-style-image: url(revbunhdlurk.png);
+}
+
+summary::marker {
+  color: #b812ca;
+  font-size: 1.2em;
+}
+
+summary {
+
+    justify-content: space-between;
+    cursor: pointer;
+    list-style-image: url(revbunhdlurk.png);
+}
+
+    </style>
+
+ </Head>
        
     <body style="background-size: cover; background-image: url(bisky.JPG);">
 <!------------------------------------------------------------------------------------>
@@ -74,15 +116,17 @@ Then I need to sync the repo in VSCode.
 
     <br>
     <hr style="border-color: #b812ca;">
+   <!-- <hr style="border-style: none none dotted; border-color: #b812ca;">-->
         
         </p>
 <!---------------------------------------------------------------------------------->
 
 <!--2. The following section of content is for my medical/personal profile.-->
 <details>
-    <summary><span style="padding-right: 20%; font-size: 22; font-family: Arial, Helvetica, sans-serif; color: #b812ca; font-weight: bolder;"> Background:</span> <br><br> </summary>
 
-<p style="padding-right: 20%; font-size: 22; font-family: Arial, Helvetica, sans-serif; color: #b812ca;"> I am a neurodivergent <span style="color:#5BCEFA;">gen</span><span style="color:#F5A9B8;">der</span><span style="color:#FFFFFF;">fluid</span><span style="color:#F5A9B8;"> fem</span><span style="color:#5BCEFA;">me</span>. I am 30 years old. <br><br>I am relatively active, though my day job is sedentary. I weigh about 150lbs (68kg) and am 5'5" (165cm). I eat a plant-based diet consisting of lots of carbohydrates and vegetables. My diet is generally low in sugars. I consume alcohol occasionally; I don't use other substances. <br><br>I had two separate DVT <span style="font-style: italic">(blood clots)</span>, both in my left leg, about a year apart <span style="font-style: italic;">before</span> beginning HRT. I have been taking a prophylactic anticoagulant (5mg twice daily) since the second DVT. I have not had another DVT since, even with estradiol levels as high as 800 pg/mL.
+<summary><span style="padding-right: 20%; font-size: 22; font-family: Arial, Helvetica, sans-serif; color: #b812ca; font-weight: bolder;"> BACKGROUND</span> <br><br> </summary>
+
+<p style="padding-right: 20%; font-size: 22; font-family: Arial, Helvetica, sans-serif; color: #b812ca; font-weight: normal;"> I am a neurodivergent <span style="color:#5BCEFA;">gen</span><span style="color:#F5A9B8;">der</span><span style="color:#FFFFFF;">fluid</span><span style="color:#F5A9B8;"> fem</span><span style="color:#5BCEFA;">me</span>. I am 30 years old. <br><br>I am relatively active, though my day job is sedentary. I weigh about 150lbs (68kg) and am 5'5" (165cm). I eat a plant-based diet consisting of lots of carbohydrates and vegetables. My diet is generally low in sugars. I consume alcohol occasionally; I don't use other substances. <br><br>I had two separate DVT <span style="font-style: italic">(blood clots)</span>, both in my left leg, about a year apart <span style="font-style: italic;">before</span> beginning HRT. I have been taking a prophylactic anticoagulant (5mg twice daily) since the second DVT. I have not had another DVT since, even with estradiol levels as high as 800 pg/mL.
     
     <br><br> <span style="font-weight:normal;"> I experience complex health including:</span>
     <br><br> - hypersensitive nervous system & sensory processing disorder <span style="font-style: italic;">(stuff hurts and feels a lot)</span>
@@ -94,13 +138,12 @@ Then I need to sync the repo in VSCode.
 </p>
 </details>
 
-<hr style="border-style: none none dashed; border-color: #b812ca;">
 <!------------------------------------------------------------------------------------>
 
 <!--3. The following section of content is for narrative context.-->
 <details>
-    <summary><span style="padding-right: 20%; font-size: 22; font-family: Arial, Helvetica, sans-serif; color: #b812ca; font-weight: bolder;"> HRT:</span> <br><br> </summary>
-<p style="padding-right: 20%; font-size: 22; font-family: Arial, Helvetica, sans-serif; color: #b812ca;">
+    <summary><span style="padding-right: 20%; font-size: 22; font-family: Arial, Helvetica, sans-serif; color: #b812ca; font-weight: bolder;"> HRT</span> <br><br> </summary>
+<p style="padding-right: 20%; font-size: 22; font-family: Arial, Helvetica, sans-serif; color: #b812ca; font-weight: normal;">
     
     I first came out to my therapist on January 3rd, 2020. I began HRT in 2021. I was recommended transdermal patches due to my increased clotting risk. I started with Mylan 0.1mg/day patches that I replaced weekly. The patches were large and uncomfortable, causing a serious rash. I switched to Dotti 0.1mg/day patches on August 2, 2021. This brand was smaller and much thinner but needed to be changed twice weekly. I am still using Dotti patches and have generally been happy with them. I place the patches on the fatty, upper part of my butt (sort of just above where the gluteus medius meets the gluteus maximus). I rotate sides (left and right butt cheek) each time I replace the patches to allow the recently covered skin to breathe.
 
@@ -114,10 +157,8 @@ Then I need to sync the repo in VSCode.
     <span style="font-style: italic;">Side note: I began an antiandrogen (Spironolactone) before beginning estrogen. I would later drop the antiandrogen in the Spring of 2021 since it was causing significant GI distress. I have succesfully supressed my testosterone levels without an antiandrogen. I am not sure why this has been successful, however I wonder if it is due to my elevated estradiol level immediately after replacing patches.</span>
 </details>
 
-<hr style="border-style: none none dashed; border-color: #b812ca;">
-
     <details>
-        <summary><span style="padding-right: 20%; font-size: 22; font-family: Arial, Helvetica, sans-serif; color: #b812ca; font-weight: bolder;"> Dashboard::</span> <br><br> </summary>
+        <summary><span style="padding-right: 20%; font-size: 22; font-family: Arial, Helvetica, sans-serif; color: #b812ca; font-weight: bolder;"> DASHBOARD</span> <br><br> </summary>
 
     <p style="padding-right: 20%; font-size: 22; font-family: Arial, Helvetica, sans-serif; color: #b812ca; font-weight: normal;">Below you can see a dashboard with 4 buttons on the left side panel. This dashboard contains data related to my medication dosages and hormone levels since 2021. The first button displays a scatter plot describing my estradiol level over the period of single patch cycle. The yellow points</p>
 
