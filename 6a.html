@@ -55,15 +55,17 @@ details:hover {
   border-color: #b812ca;
   border-radius: 6px;
   border-width: 2px;
-  background-color: #6a616b65;
+  <!--- background-image: linear-gradient(40deg, #e792e7 11%, #6eb7f1 100%); --->
 }
 
 details[open] {
   background-color: transparent;
+  background-image:none;
+
 }
 
 details[open] > summary {
-
+list-style-image: url(revbunhdlurkaww.png);
 }
 
 summary::marker {
@@ -75,7 +77,7 @@ summary {
 
     justify-content: space-between;
     cursor: pointer;
-    background: url(revbunhdlurk.png);
+    list-style-image: url(revbunhdlurk.png);
     
 }
 
