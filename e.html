@@ -124,12 +124,73 @@ footer {
 
   /* Use the text as a mask for the background. */
   /* This will show the gradient as a text color rather than element bg. */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent; 
   
   /* Animate the text when loading the element. */
     /* This animates it on page load and when hovering out. */
-    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+    animation: rainbow-text-simple-animation-rev 2s ease forwards;
+
+}
+
+.gradient-text:hover{
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+
+.gradient-text-3 {
+     /* Fallback: Set a background color. */
+     background-color: #b812ca;
+  
+  /* Create the gradient. */
+   background-image: linear-gradient(
+        45deg,
+        #5BCEFA 5%, 
+        #F5A9B8 10%, 
+        #FFFFFF 15%, 
+        #F5A9B8 20%, 
+        #5BCEFA 25%);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent; 
+  
+  /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-simple-animation-rev 2s ease forwards;
 
 }
 
@@ -179,9 +240,11 @@ footer {
        
 <!--1. The following section of content is for the main text that introduces myself on the website.-->
 
-<p style="padding-right: 20%; font-size: 22; font-weight: bolder; font-family: Arial, Helvetica, sans-serif; color: #b812ca;"> Hi, I am <span style="color: #6a616b65; font-weight: bolder;">Jae</span>. Welcome to my website ^^ 
+<p style="padding-right: 20%; font-size: 22; font-weight: bolder; font-family: Arial, Helvetica, sans-serif; color: #b812ca;"> Hi, I am <span style="color: #6a616b65; font-weight: bolder;">Jae</span>. Welcome to my website ^^ </p>
 <br>
-<br><pre class="gradient-text-2" style="color: #e792e7;">
+<br>
+
+<pre class="gradient-text-3" style="color: #e792e7;">
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣤⣶⣶⣶⣶⣦⣤⡀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣄⣶⣿⠟⠛⠉⠀⠀⠀⢀⣹⣿⡇⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⢀⣤⣾⣿⡟⠛⠛⠛⠉⠀⠀⠀⠀⠒⠒⠛⠿⠿⠿⠶⣿⣷⣢⣄⡀⠀
@@ -191,7 +254,7 @@ footer {
 ⠀⠀⣿⡿⠷⠲⢶⣄⠀⠀⠀⠀⠀⣀⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠙⣷⣦⠀⠀⠀
 ⠛⠛⢿⣅⣀⣀⣀⣿⠶⠶⠶⢤⣾⠋⠀⠀⠙⣷⣄⣀⣀⣀⣀⡀⠀⠘⣿⣆⠀⠀
 ⠀⠀⠀⠈⠉⠉⠉⠁⠀⠀⠀⠀⠈⠛⠛⠶⠾⠋⠉⠉⠉⠉⠉⠉⠉⠉⠛⠛⠛⠛
-</pre></p>
+</pre>
 
         <p style="padding-right: 20%; font-size: 22; font-weight: normal; font-family: Arial, Helvetica, sans-serif; color: #b812ca;">     
             This place is a home for my HRT data. Please enjoy my charts.
@@ -213,7 +276,7 @@ footer {
 
 <summary><span class="gradient-text" style="padding-right: 20%; font-size: 300%; font-family: Arial, Helvetica, sans-serif; color: #b812ca; font-weight: bolder;"> BACKGROUND</span> <br><br> </summary>
 
-<p style="padding-right: 20%; font-size: 22; font-family: Arial, Helvetica, sans-serif; color: #b812ca; font-weight: normal;"> I am a neurodivergent <span style="color:#5BCEFA;">gen</span><span style="color:#F5A9B8;">der</span><span style="color:#FFFFFF;">fluid</span><span style="color:#F5A9B8;"> fem</span><span style="color:#5BCEFA;">me</span>. I am 30 years old. <br><br>I am relatively active, though my day job is sedentary. I weigh about 150lbs (68kg) and am 5'5" (165cm). I eat a plant-based diet consisting of lots of carbohydrates and vegetables. My diet is generally low in sugars. I consume alcohol occasionally; I don't use other substances. <br><br>I had two separate DVT <span style="font-style: italic">(blood clots)</span>, both in my left leg, about a year apart <span style="font-style: italic;">before</span> beginning HRT. I have been taking a prophylactic anticoagulant (5mg twice daily) since the second DVT. I have not had another DVT since, even with estradiol levels as high as 800 pg/mL.
+<p style="padding-right: 20%; font-size: 22; font-family: Arial, Helvetica, sans-serif; color: #b812ca; font-weight: normal;"> I am a neurodivergent <span class="gradient-text-2"> genderfluid femme</span>. I am 30 years old. <br><br>I am relatively active, though my day job is sedentary. I weigh about 150lbs (68kg) and am 5'5" (165cm). I eat a plant-based diet consisting of lots of carbohydrates and vegetables. My diet is generally low in sugars. I consume alcohol occasionally; I don't use other substances. <br><br>I had two separate DVT <span style="font-style: italic">(blood clots)</span>, both in my left leg, about a year apart <span style="font-style: italic;">before</span> beginning HRT. I have been taking a prophylactic anticoagulant (5mg twice daily) since the second DVT. I have not had another DVT since, even with estradiol levels as high as 800 pg/mL.
     
     <br><br> <span style="font-weight:normal;"> I experience complex health including:</span>
     <br><br> - hypersensitive nervous system & sensory processing disorder <span style="font-style: italic;">(stuff hurts and feels a lot)</span>
