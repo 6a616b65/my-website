@@ -65,8 +65,19 @@ details[open] {
 
 }
 
-details[open] > summary {
-list-style-image: url(revbunhdlurkaww.png);
+summary::after {
+  content: '';
+  width: 18px;
+  height: 10px;
+  background: url(revbunhdlurk.png);
+  background-size: cover;
+  margin-left: .75em;
+  transition: 0.2s;
+}
+
+details[open] > summary::after {
+<!---list-style-image: url(revbunhdlurkaww.png);--->
+background: url(revbunhdlurkaww.png)
 }
 
 summary::marker {
@@ -78,7 +89,8 @@ summary {
 
     justify-content: space-between;
     cursor: pointer;
-    list-style-image: url(revbunhdlurk.png);
+    <!---list-style-image: url(revbunhdlurk.png);--->
+    background:
     
 }
 
